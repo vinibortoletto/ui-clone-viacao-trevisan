@@ -1,0 +1,29 @@
+.tabelas {
+  display: grid;
+}
+
+.tabela {
+  @extend %borda;
+  color: $cinza;
+
+  @extend %flexbox;
+  padding: 1.5rem;
+
+  margin-bottom: 1.5rem;
+
+  &:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .icone_pdf {
+    width: 2.5rem;
+    margin-right: 1rem;
+  }
+
+  transition: 0.2s ease-in-out;
+  &:hover {
+    border: 1px solid $azul;
+    background: $branco;
+    color: $azul;
+  }
+}

@@ -1,0 +1,85 @@
+%flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%sectionHome {
+  .titulo {
+    @extend %flexbox;
+    flex-direction: column;
+
+    h1 {
+      color: $azul;
+      font-weight: bold;
+      font-size: $grande;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $cinza;
+      font-size: $pequena;
+    }
+  }
+}
+
+%separador {
+  width: 5rem;
+  height: 0.2rem;
+  background: $cinzaClaro;
+  border-radius: 0.2rem;
+
+  margin: 1rem 0 1rem 0;
+}
+
+%borda {
+  border: 1px solid $cinzaClaro;
+}
+
+%passagem {
+  @extend %borda;
+
+  @extend %flexbox;
+  flex-direction: column;
+
+  padding: 1.5rem;
+  text-align: center;
+
+  .img_passagem {
+    width: 10rem;
+    margin-bottom: 2rem;
+    @extend %borda;
+  }
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: $preto;
+  }
+
+  p {
+    font-size: $pequena;
+  }
+
+  span {
+    margin: 1rem 0 2rem 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: $preto;
+  }
+
+  button {
+    background: $azul;
+    width: 100%;
+    color: $branco;
+    @extend %flexbox;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+
+    transition: 0.2s ease-in-out;
+    &:hover {
+      background: rgb(0, 134, 192);
+    }
+  }
+}

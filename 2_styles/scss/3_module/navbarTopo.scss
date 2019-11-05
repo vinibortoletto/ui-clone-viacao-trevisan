@@ -1,0 +1,19 @@
+.navbar_topo {
+  background: $cinza;
+  font-size: $pequena;
+  color: $branco;
+
+  @extend %flexbox;
+  justify-content: flex-end;
+  padding: 0.6rem 5vw 0.6rem 5vw;
+
+  .link {
+    @extend %flexbox;
+  }
+
+  .telefone,
+  .email,
+  .login {
+    display: none;
+  }
+}

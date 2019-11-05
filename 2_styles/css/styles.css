@@ -1,0 +1,451 @@
+@charset "UTF-8";
+.navbar_menu .menu_icone, .navbar_menu, .navbar_topo .link, .navbar_topo, .itinerarios .itinerario, .tabela, .banner_secundario, .passagem button, .passagem, section .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .titulo {
+  flex-direction: column;
+}
+section .titulo h1 {
+  color: #0098da;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+section .titulo p {
+  color: #637281;
+  font-size: 0.8rem;
+}
+
+.separador {
+  width: 5rem;
+  height: 0.2rem;
+  background: #e2e2e2;
+  border-radius: 0.2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.itinerarios .itinerario, .tabela, .passagem .img_passagem, .passagem {
+  border: 1px solid #e2e2e2;
+}
+
+.passagem {
+  flex-direction: column;
+  padding: 1.5rem;
+  text-align: center;
+}
+.passagem .img_passagem {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+.passagem h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+.passagem p {
+  font-size: 0.8rem;
+}
+.passagem span {
+  margin: 1rem 0 2rem 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #333333;
+}
+.passagem button {
+  background: #0098da;
+  width: 100%;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.passagem button:hover {
+  background: #0086c0;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:before {
+  content: "•";
+  font-size: 22px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #637281;
+}
+
+button {
+  border: none;
+  background: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #84f1ff;
+  cursor: pointer;
+}
+
+.icone {
+  filter: invert(100);
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.banner_primario {
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 2rem;
+  background: #637281 url("/1_images/1_layout/1_home/home_banner-primario-p.jpg") no-repeat scroll 70%;
+  background-size: cover;
+}
+
+.banner_secundario {
+  width: 100%;
+  height: 15rem;
+  color: #f0f0f0;
+  box-sizing: border-box;
+  padding: 0 5vw 0 5vw;
+  margin-bottom: 3rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #637281 url("/1_images/1_layout/1_home/home_banner-secundario-p.jpg") no-repeat scroll 70%;
+  background-size: cover;
+}
+.banner_secundario h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.banner_secundario p {
+  font-size: 0.8rem;
+}
+.banner_secundario #btn_saibaMais {
+  width: 12rem;
+  background: #eb982f;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.banner_secundario #btn_saibaMais a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+.banner_secundario #btn_saibaMais:hover {
+  background: #ec8a09;
+}
+
+.tabelas {
+  display: grid;
+}
+
+.tabela {
+  color: #637281;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: 0.2s ease-in-out;
+}
+.tabela:nth-child(2) {
+  margin-bottom: 0;
+}
+.tabela .icone_pdf {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+.tabela:hover {
+  border: 1px solid #0098da;
+  background: #f0f0f0;
+  color: #0098da;
+}
+
+.passagens_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.passagens .aviso {
+  background: #f5f5f5;
+  box-shadow: 0 3px 10px darkgray;
+  margin: 0 -5vw 0 -5vw;
+  padding: 4rem 5vw 4rem 5vw;
+}
+.passagens .aviso h2 {
+  color: crimson;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.passagens .aviso h1 {
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.passagens .aviso p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+.passagem {
+  margin-bottom: 2rem;
+}
+.passagem:nth-child(4) {
+  margin-right: 0;
+}
+
+.itinerarios .itinerario {
+  flex-direction: column;
+  padding: 1.5rem;
+  margin-right: 1rem;
+}
+.itinerarios .itinerario h1,
+.itinerarios .itinerario p {
+  margin-bottom: 1rem;
+}
+.itinerarios .itinerario h1 {
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.itinerarios .itinerario h1 span {
+  font-size: 1rem;
+}
+.itinerarios .itinerario button {
+  margin-top: 1rem;
+  background: #e2e2e2;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 10rem;
+  padding: 1rem;
+}
+.itinerarios .itinerario button a {
+  color: #637281;
+}
+
+.itinerarios_slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 0 5vw 0 5vw;
+}
+
+section.horarios {
+  margin-bottom: 0;
+}
+
+.navbar_topo {
+  background: #637281;
+  font-size: 0.8rem;
+  color: #f0f0f0;
+  justify-content: flex-end;
+  padding: 0.6rem 5vw 0.6rem 5vw;
+}
+.navbar_topo .telefone,
+.navbar_topo .email,
+.navbar_topo .login {
+  display: none;
+}
+
+.navbar_menu {
+  padding: 5vw;
+  justify-content: space-between;
+}
+.navbar_menu #navbar_logo {
+  width: 12rem;
+}
+.navbar_menu .menu_icone {
+  cursor: pointer;
+  width: 35px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar_menu .menu_icone .menu_barra {
+  background: #637281;
+  width: 100%;
+  height: 0.25rem;
+  border-radius: 0.3rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
