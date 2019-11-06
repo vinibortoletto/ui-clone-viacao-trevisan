@@ -20,65 +20,91 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
+      <nav class="navbar">
         <div class="navbar_topo">
-          <div class="link telefone">
-            <img
-              class="icone"
-              src="./1_images/0_icons/navbar_telefone.svg"
-              alt="ícone de telefone"
-            />
-            <span>(19) 3426-4658 / (19) 3426-4659</span>
-          </div>
-          <div class="link email">
-            <img
-              class="icone"
-              src="./1_images/0_icons/navbar_email.svg"
-              alt="ícone de email"
-            />
-            <span>faleconosco@trevilog.com.br</span>
-          </div>
-          <div class="link carrinho">
-            <img
-              class="icone"
-              src="./1_images/0_icons/navbar_carrinho.svg"
-              alt="ícone de carrinho"
-            />
-            <span>meu carrinho</span>
+          <div class="links_esquerda">
+            <div class="link telefone">
+              <img
+                class="icone"
+                src="./1_images/0_icons/icon_telefone.svg"
+                alt="ícone de telefone"
+              />
+              <span>(19) 3426-4658 / (19) 3426-4659</span>
+            </div>
+            <div class="link email">
+              <img
+                class="icone"
+                src="./1_images/0_icons/icon_email.svg"
+                alt="ícone de email"
+              />
+              <span>faleconosco@trevilog.com.br</span>
+            </div>
+            <div class="link carrinho">
+              <img
+                class="icone"
+                src="./1_images/0_icons/icon_carrinho.svg"
+                alt="ícone de carrinho"
+              />
+              <span>meu carrinho</span>
+            </div>
           </div>
           <div class="link login">
             <img
               class="icone"
-              src="./1_images/0_icons/navbar_usuario.svg"
+              src="./1_images/0_icons/icon_usuario.svg"
               alt="ícone de usuário"
             />
             <span>Olá, faça seu <a href="#">login ou cadastre-se</a></span>
           </div>
         </div>
         <div class="navbar_menu">
-          <img
-            id="navbar_logo"
-            src="./1_images/2_module/1_navbar/navbar_logo.png"
-            alt="viação trevisan logo"
-          />
-          <div class="menu_icone">
-            <div class="menu_barra"></div>
-            <div class="menu_barra marginBottom"></div>
-            <div class="menu_barra"></div>
+          <div class="logo_box">
+            <img
+              id="navbar_logo"
+              src="./1_images/2_module/1_navbar/navbar_logo.png"
+              alt="viação trevisan logo"
+            />
+          </div>
+
+          <div class="mobile">
+            <div class="menu_icone">
+              <div class="menu_barra"></div>
+              <div class="menu_barra marginBottom"></div>
+              <div class="menu_barra"></div>
+            </div>
+          </div>
+
+          <div class="desktop">
+            <ul class="desktop_links">
+              <a href="#"><li class="desktop_link">Home</li></a>
+              <a href="#"><li class="desktop_link">Sobre nós</li></a>
+              <a href="#"><li class="desktop_link">Passagens</li></a>
+              <a href="#"><li class="desktop_link">Itinerários</li></a>
+              <a href="#"><li class="desktop_link">Horários</li></a>
+              <a href="#"><li class="desktop_link">Dúvidas</li></a>
+              <a href="#"><li class="desktop_link">RH</li></a>
+              <a href="#"><li class="desktop_link">Contato</li></a>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
 
       <div class="banner">
         <div class="banner_primario"></div>
-        <div class="banner_secundario">
-          <h1>Professoras e estudantes</h1>
-          <p>
+        <div
+          id="parallax"
+          class="banner_secundario"
+          data-parallax="scroll"
+          data-image-src="/1_images/1_layout/1_home/home_banner-secundario-g.jpg"
+          data-speed=".5"
+        >
+          <h1 class="titulo">Professoras e estudantes</h1>
+          <p class="texto">
             Somente serão aceitos os pedidos onde a instituição de ensino é
             reconhecida pelo MEC
           </p>
           <button id="btn_saibaMais" type="button">
-            <a href="#">Saiba mais</a>
+            <a class="link" href="#">Saiba mais</a>
           </button>
         </div>
       </div>
@@ -104,7 +130,7 @@
           </a>
 
           <a href="#">
-            <div class="tabela Charqueada">
+            <div class="tabela charqueada">
               <img
                 class="icone_pdf"
                 src="/1_images/1_layout/1_home/home_pdf.png"
@@ -139,7 +165,7 @@
             <button type="button">
               <img
                 class="icone"
-                src="/1_images/0_icons/navbar_carrinho.svg"
+                src="/1_images/0_icons/icon_carrinho.svg"
                 alt="icone de carrinho"
               />
               Comprar
@@ -162,7 +188,7 @@
             <button type="button">
               <img
                 class="icone"
-                src="/1_images/0_icons/navbar_carrinho.svg"
+                src="/1_images/0_icons/icon_carrinho.svg"
                 alt="icone de carrinho"
               />
               Comprar
@@ -185,7 +211,7 @@
             <button type="button">
               <img
                 class="icone"
-                src="/1_images/0_icons/navbar_carrinho.svg"
+                src="/1_images/0_icons/icon_carrinho.svg"
                 alt="icone de carrinho"
               />
               Comprar
@@ -208,7 +234,7 @@
             <button type="button">
               <img
                 class="icone"
-                src="/1_images/0_icons/navbar_carrinho.svg"
+                src="/1_images/0_icons/icon_carrinho.svg"
                 alt="icone de carrinho"
               />
               Comprar
@@ -217,15 +243,16 @@
         </div>
 
         <div class="aviso">
-          <h2>Aviso</h2>
-          <h1>Reajuste de tarifa</h1>
-          <p>
+          <div class="aviso_img"></div>
+          <h2 class="aviso_titulo">Aviso</h2>
+          <h1 class="aviso_subtitulo">Reajuste de tarifa</h1>
+          <p class="aviso_texto">
             Portaria Artesp – 4, de 11/01/2019, publicada no DOE de 12/01/2019,
             dispõe sobre os preços das passagens do serviço intermunicipal de
             transporte coletivo de passageiros das linhas outorgadas pelo DER/SP
             e assumidas pela ARTESP.
           </p>
-          <p>
+          <p class="aviso_texto">
             As bases tarifárias foram reajustadas, na média, em 6,10% para os
             serviços de característica suburbana, esta portaria e os preços das
             passagens ora aprovados e veiculados nos anexos entram em vigor a
@@ -291,16 +318,180 @@
           <p>Confira todos os horários disponíveis</p>
           <div class="separador"></div>
         </div>
+
+        <div class="horarios_slider slider">
+          <div class="horario">
+            <h1>Rio das Pedras / Piracicaba - Via Av. 31 de Março</h1>
+            <p>Atende COTIP/EEP em dias letivos</p>
+            <button type="button">
+              <a href="">visualizar</a>
+            </button>
+          </div>
+          <div class=" horario">
+            <h1>Rio das Pedras / Piracicaba - Via Av. 31 de Março</h1>
+            <p>Atende COTIP/EEP em dias letivos</p>
+            <button type="button">
+              <a href="">visualizar</a>
+            </button>
+          </div>
+          <div class=" horario">
+            <h1>Rio das Pedras / Piracicaba - Via Av. 31 de Março</h1>
+            <p>Atende COTIP/EEP em dias letivos</p>
+            <button type="button">
+              <a href="">visualizar</a>
+            </button>
+          </div>
+          <div class=" horario">
+            <h1>Rio das Pedras / Piracicaba - Via Av. 31 de Março</h1>
+            <p>Atende COTIP/EEP em dias letivos</p>
+            <button type="button">
+              <a href="">visualizar</a>
+            </button>
+          </div>
+          <div class=" horario">
+            <h1>Rio das Pedras / Piracicaba - Via Av. 31 de Março</h1>
+            <p>Atende COTIP/EEP em dias letivos</p>
+            <button type="button">
+              <a href="">visualizar</a>
+            </button>
+          </div>
+          <div class=" horario">
+            <h1>Rio das Pedras / Piracicaba - Via Av. 31 de Março</h1>
+            <p>Atende COTIP/EEP em dias letivos</p>
+            <button type="button">
+              <a href="">visualizar</a>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <div class="footer_navbar">
-        <div class="footer_navbar-categorias"></div>
-        <div class="footer_navbar-categorias"></div>
-        <div class="footer_navbar-categorias"></div>
-        <div class="footer_navbar-categorias"></div>
+        <div class="categorias trevilog">
+          <h1>Trevilog</h1>
+          <div class="separador"></div>
+          <a hred="#" class="link">Sobre nós</a>
+          <a hred="#" class="link">Comprar passagens</a>
+          <a hred="#" class="link">Venda e retirada de VT</a>
+          <a hred="#" class="link">Valores do VT</a>
+          <a hred="#" class="link">Itinerários</a>
+          <a hred="#" class="link">Horários</a>
+          <a hred="#" class="link">Estudantes e Professores</a>
+          <a hred="#" class="link">Perguntas Frequentes</a>
+          <a hred="#" class="link">Termos de uso</a>
+          <a hred="#" class="link">RH</a>
+          <a hred="#" class="link">Contato</a>
+        </div>
+        <div class="separador_vertical"></div>
+        <div class="categorias usuario">
+          <h1>Usuário</h1>
+          <div class="separador"></div>
+          <a hred="#" class="link">Entrar</a>
+          <a hred="#" class="link">Cadastre-se</a>
+          <a hred="#" class="link">Minha conta</a>
+          <a hred="#" class="link">Meu carrinho</a>
+        </div>
+        <div class="categorias retiradaDoVT">
+          <h1>Retirada do VT</h1>
+          <div class="separador"></div>
+          <div class="item">
+            <img
+              class="icone"
+              src="/1_images/0_icons/icon_location.svg"
+              alt="icone de localização"
+            />
+            <div>
+              <p>Av. Armando Salles de Oliveira, 2277</p>
+              <p>Guichê nº 11, Centro</p>
+              <p>Piracicaba/SP</p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="icone"
+              src="/1_images/0_icons/icon_headphone.svg"
+              alt="icone de headphone"
+            />
+            <div>
+              <p>Segunda a sexta</p>
+              <p>07:45 às 11:15</p>
+              <p>12:45 às 18:00</p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="icone"
+              src="/1_images/0_icons/icon_location.svg"
+              alt="icone de localização"
+            />
+            <div>
+              <p>Av. Armando Salles de Oliveira, 2277</p>
+              <p>Guichê nº 11, Centro</p>
+              <p>Piracicaba/SP</p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="icone"
+              src="/1_images/0_icons/icon_headphone.svg"
+              alt="icone de headphone"
+            />
+            <div>
+              <p>Segunda a sexta</p>
+              <p>07:45 às 11:15</p>
+              <p>12:45 às 18:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="categorias atendimento">
+          <h1>Atendimento</h1>
+          <div class="separador"></div>
+          <div class="item">
+            <img
+              class="icone"
+              src="/1_images/0_icons/icon_location.svg"
+              alt="icone de localização"
+            />
+            <div>
+              <p>
+                Avenida Professor Alberto Vollet Sachs, 653, Jardim Elite -
+                Piracicaba/SP
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="icone"
+              src="/1_images/0_icons/icon_telefone.svg"
+              alt="icone de telefone"
+            />
+            <div>
+              <p><span>(00)</span> 0000-0000</p>
+              <p><span>(00)</span> 0000-0000</p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="icone"
+              src="/1_images/0_icons/icon_email.svg"
+              alt="icone de email"
+            />
+            <div>
+              <p>email@example.com.br</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer_copyright"></div>
+      <div class="footer_copyright">
+        <p>
+          Copyright © 2018 Viação Trevisan e Logística Ltda. Todos os direitos
+          reservados.
+        </p>
+        <img
+          src="/1_images/2_module/3_footer/footer_logo.png"
+          alt="vinicius bortoletto logo"
+        />
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -311,5 +502,8 @@
 
     <script src="/3_scripts/slider/slider.js"></script>
     <script src="/3_scripts/slider/slick.min.js"></script>
+
+    <script src="/3_scripts/parallax/parallax.min.js"></script>
+    <script src="/3_scripts/parallax/parallax.js"></script>
   </body>
 </html>

@@ -1,19 +1,77 @@
 .navbar_topo {
-  background: $cinza;
-  font-size: $pequena;
-  color: $branco;
+  background: $c-cinza;
+  font-size: $f-pequeno;
+  color: $c-branco;
 
   @extend %flexbox;
-  justify-content: flex-end;
-  padding: 0.6rem 5vw 0.6rem 5vw;
+  padding: 0 5vw 0 5vw;
 
   .link {
     @extend %flexbox;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+  }
+
+  .telefone,
+  .login {
+    padding-left: 0;
+  }
+
+  .login {
+    padding-right: 0;
+  }
+
+  .links_esquerda {
+    @extend %flexbox;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .telefone,
   .email,
   .login {
     display: none;
+  }
+}
+
+@media #{$m-pequeno} {
+  .navbar_topo {
+    justify-content: flex-start;
+
+    .telefone {
+      display: flex;
+    }
+
+    .links_esquerda {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media #{$m-medio} {
+  .navbar_topo {
+    justify-content: space-between;
+
+    .telefone,
+    .email {
+      border-right: 1px solid #535f6b;
+    }
+    .carrinho,
+    .email {
+      border-left: 1px solid #738394;
+    }
+
+    .login {
+      margin-right: 0;
+    }
+
+    .email,
+    .login {
+      display: flex;
+    }
+
+    .links_esquerda {
+      justify-content: flex-start;
+      width: auto;
+    }
   }
 }

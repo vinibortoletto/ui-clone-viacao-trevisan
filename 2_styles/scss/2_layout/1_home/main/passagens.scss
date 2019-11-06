@@ -3,36 +3,54 @@
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
 }
 
-.passagens {
-  .aviso {
-    background: #f5f5f5;
-    box-shadow: 0 3px 10px darkgray;
-    margin: 0 -5vw 0 -5vw;
-    padding: 4rem 5vw 4rem 5vw;
+.aviso {
+  background: #f5f5f5;
+  box-shadow: 0 3px 10px darkgray;
+  margin: 1rem -5vw 0 -5vw;
+  padding: 4rem 5vw 4rem 5vw;
 
-    h2 {
-      color: crimson;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: $pequena;
-      margin-bottom: 1rem;
-    }
+  overflow: hidden;
+  position: relative;
+}
 
-    h1 {
-      color: $preto;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-    }
+.aviso_img {
+  width: 12rem;
+  height: 10rem;
 
-    p {
-      font-size: $pequena;
-      line-height: 1.6;
-      margin-bottom: 0.5rem;
-      text-justify: inter-word;
-      text-align: justify;
-    }
-  }
+  position: absolute;
+  top: 7rem;
+  left: 4rem;
+
+  opacity: 0.05;
+  transform: scale(3) rotate(-10deg);
+
+  background: #f5f5f5 url("/1_images/1_layout/1_home/home_aviso.png") no-repeat
+    scroll center;
+  background-size: cover;
+}
+
+.aviso_titulo {
+  color: crimson;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: $f-pequeno;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.aviso_subtitulo {
+  color: $c-preto;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.aviso_texto {
+  font-size: $f-pequeno;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  text-justify: inter-word;
+  text-align: justify;
 }
 
 .passagem {
@@ -40,6 +58,47 @@
   margin-bottom: 2rem;
 
   &:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+@media #{$m-pequeno} {
+  .passagens_box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .passagem:nth-child(odd) {
+    margin-right: 1rem;
+  }
+
+  .passagem:nth-child(even) {
+    margin-left: 1rem;
+  }
+
+  .aviso_img {
+    top: 3rem;
+    transform: scale(2.5) rotate(-10deg);
+  }
+}
+
+@media #{$m-grande} {
+  .passagens_box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .passagem:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .passagem:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .passagem {
+    margin-right: 1rem !important;
+  }
+
+  .passagem:nth-last-child(1) {
     margin-right: 0;
   }
 }

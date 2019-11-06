@@ -1,10 +1,11 @@
 @import "./horariosPdf.scss";
 @import "./passagens.scss";
 @import "./itinerarios.scss";
+@import "./horarios.scss";
 
 section {
   @extend %sectionHome;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   padding: 0 5vw 0 5vw;
 }
 

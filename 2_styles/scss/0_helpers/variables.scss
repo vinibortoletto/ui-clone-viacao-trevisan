@@ -1,15 +1,21 @@
 // Cores --------------------------------------
 
-$branco: #f0f0f0;
-$preto: #333333;
+$c-branco: #f0f0f0;
+$c-preto: #333333;
 
-$cinza: #637281;
-$cinzaClaro: #e2e2e2;
+$c-cinza: #637281;
+$c-cinzaClaro: #e2e2e2;
 
-$azul: #0098da;
-$azulClaro: #84f1ff;
+$c-azul: #0098da;
+$c-azulClaro: #84f1ff;
 
 // Fonte --------------------------------------
 
-$pequena: 0.8rem;
-$grande: 1.8rem;
+$f-pequeno: 0.8rem;
+$f-grande: 1.8rem;
+
+// Media queries --------------------------------------
+
+$m-pequeno: "only screen and (min-width: 600px)";
+$m-medio: "only screen and (min-width: 1000px)";
+$m-grande: "only screen and (min-width: 1200px)";

@@ -1,45 +1,5 @@
 .itinerarios {
   .itinerario {
-    @extend %borda;
-
-    @extend %flexbox;
-    flex-direction: column;
-
-    padding: 1.5rem;
-    margin-right: 1rem;
-
-    h1,
-    p {
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      color: $preto;
-      font-weight: bold;
-      font-size: $grande;
-
-      span {
-        font-size: 1rem;
-      }
-    }
-
-    button {
-      margin-top: 1rem;
-
-      background: $cinzaClaro;
-      font-weight: bold;
-      text-transform: uppercase;
-      width: 10rem;
-      padding: 1rem;
-
-      a {
-        color: $cinza;
-      }
-    }
+    @extend %carousel;
   }
-}
-
-.itinerarios_slider {
-  display: flex;
-  flex-wrap: wrap;
 }

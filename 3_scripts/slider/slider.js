@@ -8,6 +8,7 @@ $(".slider").slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
+  accessibility: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -29,7 +30,8 @@ $(".slider").slick({
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false
       }
     }
   ]

@@ -4,16 +4,12 @@
 
 .tabela {
   @extend %borda;
-  color: $cinza;
+  color: $c-cinza;
 
   @extend %flexbox;
   padding: 1.5rem;
 
   margin-bottom: 1.5rem;
-
-  &:nth-child(2) {
-    margin-bottom: 0;
-  }
 
   .icone_pdf {
     width: 2.5rem;
@@ -22,8 +18,28 @@
 
   transition: 0.2s ease-in-out;
   &:hover {
-    border: 1px solid $azul;
-    background: $branco;
-    color: $azul;
+    border: 1px solid $c-azul;
+    background: $c-branco;
+    color: $c-azul;
+  }
+}
+
+.tabela.charqueada {
+  margin-bottom: 0;
+}
+
+@media #{$m-pequeno} {
+  .tabelas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tabela {
+    min-width: 15rem;
+    margin-right: 1rem;
+  }
+
+  .tabela.charqueada {
+    margin-right: 0;
+    margin-left: 1rem;
   }
 }

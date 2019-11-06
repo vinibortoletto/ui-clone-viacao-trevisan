@@ -8,17 +8,18 @@
   .titulo {
     @extend %flexbox;
     flex-direction: column;
+    margin-bottom: 1rem;
 
     h1 {
-      color: $azul;
+      color: $c-azul;
       font-weight: bold;
-      font-size: $grande;
+      font-size: $f-grande;
       margin-bottom: 0.5rem;
     }
 
     p {
-      color: $cinza;
-      font-size: $pequena;
+      color: $c-cinza;
+      font-size: $f-pequeno;
     }
   }
 }
@@ -26,14 +27,14 @@
 %separador {
   width: 5rem;
   height: 0.2rem;
-  background: $cinzaClaro;
+  background: $c-cinzaClaro;
   border-radius: 0.2rem;
 
   margin: 1rem 0 1rem 0;
 }
 
 %borda {
-  border: 1px solid $cinzaClaro;
+  border: 1px solid $c-cinzaClaro;
 }
 
 %passagem {
@@ -54,24 +55,24 @@
   h2 {
     font-weight: bold;
     margin-bottom: 1rem;
-    color: $preto;
+    color: $c-preto;
   }
 
   p {
-    font-size: $pequena;
+    font-size: $f-pequeno;
   }
 
   span {
     margin: 1rem 0 2rem 0;
     font-weight: bold;
     font-size: 1.3rem;
-    color: $preto;
+    color: $c-preto;
   }
 
   button {
-    background: $azul;
+    background: $c-azul;
     width: 100%;
-    color: $branco;
+    color: white;
     @extend %flexbox;
     text-transform: uppercase;
     font-weight: bold;
@@ -80,6 +81,44 @@
     transition: 0.2s ease-in-out;
     &:hover {
       background: rgb(0, 134, 192);
+    }
+  }
+}
+
+%carousel {
+  @extend %borda;
+
+  @extend %flexbox;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  h1,
+  p {
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    color: $c-preto;
+    font-weight: bold;
+    font-size: $f-grande;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  button {
+    margin-top: 1rem;
+
+    background: $c-cinzaClaro;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 10rem;
+    padding: 1rem;
+
+    a {
+      color: $c-cinza;
     }
   }
 }
