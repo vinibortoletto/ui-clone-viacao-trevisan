@@ -7,10 +7,12 @@
   padding: 1rem 5vw 1rem 5vw;
 
   background: white;
+  box-shadow: 0 5px 5px rgba(58, 58, 58, 0.5);
 }
 
 #navbar_logo {
   width: 12rem;
+  transition: 0.3s ease-out;
 }
 
 @media #{$m-pequeno} {

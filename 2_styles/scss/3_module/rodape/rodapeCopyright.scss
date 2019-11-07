@@ -1,11 +1,14 @@
 .rodape_copyright {
   @extend %flexbox;
   flex-direction: column;
-  text-align: center;
+
   padding: 2rem 5vw 2rem 5vw;
+
+  text-align: center;
+  font-size: $f-pequeno;
+
   background: #22272c;
   color: $c-branco;
-  font-size: $f-pequeno;
 }
 
 .rodape_copyright .texto {

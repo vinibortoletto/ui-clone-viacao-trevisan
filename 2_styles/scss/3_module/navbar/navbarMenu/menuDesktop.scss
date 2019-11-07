@@ -5,22 +5,21 @@
 .desktop .links_box {
   @extend %flexbox;
   justify-content: space-between;
-
-  a {
-    color: $c-cinza;
-
-    transition: 0.2s ease-out;
-
-    &:hover {
-      height: 7rem;
-
-      color: $c-azul;
-      border-bottom: 5px solid $c-azul;
-    }
-  }
 }
 
 .desktop .link {
+  color: $c-cinza;
+  height: 7rem;
+
+  transition: 0.3s ease-out;
+
+  &:hover {
+    color: $c-azul;
+    border-bottom: 5px solid $c-azul;
+  }
+}
+
+.desktop li {
   height: 7rem;
 
   @extend %flexbox;
@@ -29,6 +28,8 @@
   text-align: center;
   text-transform: uppercase;
   font-size: $f-pequeno;
+
+  transition: 0.2s ease-out;
 }
 
 @media #{$m-medio} {
@@ -38,7 +39,7 @@
 }
 
 @media #{$m-grande} {
-  .desktop .link {
+  .desktop li {
     padding: 1rem;
   }
 }

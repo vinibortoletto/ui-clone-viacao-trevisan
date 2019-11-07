@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.categorias .item, .rodape_copyright, .navbar_topo .links_esquerda, .navbar_topo .link, .navbar_topo, .navbar_menu, .mobile .hamburger, .desktop .link, .desktop .links_box, .tabela, .banner_secundario, .horarios .horario, .itinerarios .itinerario, .passagem .btn_comprar, .passagem, .secao .titulo_box {
+.categorias .item, .rodape_copyright, .navbar_topo .links_esquerda, .navbar_topo .link, .navbar_topo, .navbar_menu, .mobile .hamburger, .desktop li, .desktop .links_box, .tabela, .banner_secundario, .horarios .horario, .itinerarios .itinerario, .passagem .btn_comprar, .passagem, .secao .titulo_box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +91,7 @@
   margin-top: 1rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #637281;
   background: #e2e2e2;
 }
 .horarios .horario .btn_visualizar a, .itinerarios .itinerario .btn_visualizar a {
@@ -294,7 +295,7 @@ button {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #84f1ff;
+  color: #f0f0f0;
 }
 
 .icone {
@@ -303,9 +304,8 @@ a {
   filter: invert(100);
 }
 
-.banner,
-.parallax {
-  padding-top: 7.5rem;
+.banner {
+  padding-top: 7.4rem;
 }
 
 .banner_primario {
@@ -368,7 +368,7 @@ a {
 }
 @media only screen and (min-width: 1000px) {
   .banner_primario {
-    height: 20rem;
+    height: 25rem;
     background-image: url("/1_images/1_layout/1_home/home_banner-primario-g.jpg");
   }
 
@@ -430,6 +430,10 @@ a {
 }
 .passagem:nth-last-child(1) {
   margin-right: 0;
+}
+
+.passagem .link {
+  width: 100%;
 }
 
 .aviso {
@@ -555,22 +559,24 @@ a {
 .desktop .links_box {
   justify-content: space-between;
 }
-.desktop .links_box a {
+
+.desktop .link {
   color: #637281;
-  transition: 0.2s ease-out;
-}
-.desktop .links_box a:hover {
   height: 7rem;
+  transition: 0.3s ease-out;
+}
+.desktop .link:hover {
   color: #0098da;
   border-bottom: 5px solid #0098da;
 }
 
-.desktop .link {
+.desktop li {
   height: 7rem;
   padding: 0.7rem;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.8rem;
+  transition: 0.2s ease-out;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -579,7 +585,7 @@ a {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .desktop .link {
+  .desktop li {
     padding: 1rem;
   }
 }
@@ -666,10 +672,12 @@ a {
   justify-content: space-between;
   padding: 1rem 5vw 1rem 5vw;
   background: white;
+  box-shadow: 0 5px 5px rgba(58, 58, 58, 0.5);
 }
 
 #navbar_logo {
   width: 12rem;
+  transition: 0.3s ease-out;
 }
 
 @media only screen and (min-width: 600px) {
@@ -692,6 +700,7 @@ a {
   font-size: 0.8rem;
   background: #637281;
   color: #f0f0f0;
+  transition: 0.3s ease-out;
 }
 .navbar_topo .link {
   padding: 0.79rem 1rem 0.79rem 1rem;
@@ -711,6 +720,10 @@ a {
 .navbar_topo .email,
 .navbar_topo .login {
   display: none;
+}
+
+.navbar_topo .login a {
+  color: #84f1ff;
 }
 
 @media only screen and (min-width: 600px) {
@@ -752,15 +765,16 @@ a {
   position: fixed;
   width: 100%;
   z-index: 1;
+  transition: 0.3s ease-out;
 }
 
 .rodape_copyright {
   flex-direction: column;
-  text-align: center;
   padding: 2rem 5vw 2rem 5vw;
+  text-align: center;
+  font-size: 0.8rem;
   background: #22272c;
   color: #f0f0f0;
-  font-size: 0.8rem;
 }
 
 .rodape_copyright .texto {
@@ -782,19 +796,19 @@ a {
   }
 }
 .rodape_navbar .icone {
+  width: 1.5rem;
   padding-top: 0.3rem;
   align-self: flex-start;
-  width: 1.5rem;
   opacity: 0.3;
 }
 
 .rodape_navbar {
-  background: #2c3136;
-  padding: 2rem 5vw 2rem 5vw;
   display: grid;
   grid-template-columns: 40% 20% 40%;
+  padding: 2rem 5vw 2rem 5vw;
   color: #f0f0f0;
   font-size: 0.8rem;
+  background: #2c3136;
 }
 
 .categorias .titulo,
@@ -824,9 +838,9 @@ a {
 
 .retiradaDoVT,
 .atendimento {
+  width: 100%;
   grid-column: 1/4;
   justify-self: start;
-  width: 100%;
   margin-top: 2rem;
 }
 

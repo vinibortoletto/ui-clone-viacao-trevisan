@@ -6,6 +6,8 @@
   background: $c-cinza;
   color: $c-branco;
 
+  transition: 0.3s ease-out; //FIXME:
+
   .link {
     @extend %flexbox;
     padding: 0.79rem 1rem 0.79rem 1rem;
@@ -32,6 +34,10 @@
   .login {
     display: none;
   }
+}
+
+.navbar_topo .login a {
+  color: $c-azulClaro;
 }
 
 @media #{$m-pequeno} {

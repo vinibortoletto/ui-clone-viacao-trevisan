@@ -1,6 +1,5 @@
-.banner,
-.parallax {
-  padding-top: 7.5rem;
+.banner {
+  padding-top: 7.4rem;
 }
 
 .banner_primario {
@@ -75,7 +74,7 @@
 
 @media #{$m-medio} {
   .banner_primario {
-    height: 20rem;
+    height: 25rem;
     background-image: url("/1_images/1_layout/1_home/home_banner-primario-g.jpg");
   }
 

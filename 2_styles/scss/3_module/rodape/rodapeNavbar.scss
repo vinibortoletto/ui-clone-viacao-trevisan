@@ -1,19 +1,22 @@
 .rodape_navbar .icone {
+  width: 1.5rem;
+
   padding-top: 0.3rem;
   align-self: flex-start;
-  width: 1.5rem;
+
   opacity: 0.3;
 }
 
 .rodape_navbar {
-  background: #2c3136;
-  padding: 2rem 5vw 2rem 5vw;
-
   display: grid;
   grid-template-columns: 40% 20% 40%;
 
+  padding: 2rem 5vw 2rem 5vw;
+
   color: $c-branco;
   font-size: $f-pequeno;
+
+  background: #2c3136;
 }
 
 .categorias .titulo,
@@ -44,10 +47,10 @@
 
 .retiradaDoVT,
 .atendimento {
-  grid-column: 1/4;
-  justify-self: start;
   width: 100%;
 
+  grid-column: 1/4;
+  justify-self: start;
   margin-top: 2rem;
 }
 
@@ -64,6 +67,7 @@
 .rodape_navbar .separador_vertical {
   width: 1px;
   height: 10rem;
+
   background: linear-gradient(to bottom, transparent, $c-cinza, transparent);
   justify-self: center;
 }
