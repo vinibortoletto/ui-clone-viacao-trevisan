@@ -1,0 +1,32 @@
+@import "./menuDesktop.scss";
+@import "./menuMobile.scss";
+
+.navbar_menu {
+  @extend %flexbox;
+  justify-content: space-between;
+  padding: 1rem 5vw 1rem 5vw;
+
+  background: white;
+}
+
+#navbar_logo {
+  width: 12rem;
+}
+
+@media #{$m-pequeno} {
+  #navbar_logo {
+    width: 15rem;
+  }
+}
+
+@media #{$m-medio} {
+  .navbar_menu {
+    padding: 0 5vw 0 5vw;
+  }
+}
+
+@media #{$m-grande} {
+  #navbar_logo {
+    width: 17rem;
+  }
+}

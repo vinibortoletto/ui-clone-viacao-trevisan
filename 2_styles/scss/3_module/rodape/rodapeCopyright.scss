@@ -1,0 +1,28 @@
+.rodape_copyright {
+  @extend %flexbox;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 5vw 2rem 5vw;
+  background: #22272c;
+  color: $c-branco;
+  font-size: $f-pequeno;
+}
+
+.rodape_copyright .texto {
+  margin-bottom: 2rem;
+}
+
+.rodape_copyright .logo {
+  width: 2rem;
+}
+
+@media #{$m-pequeno} {
+  .rodape_copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .rodape_copyright .texto {
+    margin-bottom: 0;
+  }
+}

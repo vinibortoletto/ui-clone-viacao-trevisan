@@ -5,32 +5,36 @@
 }
 
 %sectionHome {
-  .titulo {
+  .titulo_box {
     @extend %flexbox;
     flex-direction: column;
+
     margin-bottom: 1rem;
+  }
 
-    h1 {
-      color: $c-azul;
-      font-weight: bold;
-      font-size: $f-grande;
-      margin-bottom: 0.5rem;
-    }
+  .titulo_box .titulo {
+    margin-bottom: 0.5rem;
 
-    p {
-      color: $c-cinza;
-      font-size: $f-pequeno;
-    }
+    font-weight: bold;
+    font-size: $f-grande;
+
+    color: $c-azul;
+  }
+
+  .titulo_box .subtitulo {
+    font-size: $f-pequeno;
+    color: $c-cinza;
   }
 }
 
 %separador {
   width: 5rem;
   height: 0.2rem;
-  background: $c-cinzaClaro;
-  border-radius: 0.2rem;
 
   margin: 1rem 0 1rem 0;
+
+  background: $c-cinzaClaro;
+  border-radius: 0.2rem;
 }
 
 %borda {
@@ -39,44 +43,51 @@
 
 %passagem {
   @extend %borda;
+  padding: 1.5rem;
 
   @extend %flexbox;
   flex-direction: column;
 
-  padding: 1.5rem;
   text-align: center;
 
   .img_passagem {
     width: 10rem;
+
     margin-bottom: 2rem;
     @extend %borda;
   }
 
-  h2 {
-    font-weight: bold;
+  .titulo {
     margin-bottom: 1rem;
+
+    font-weight: bold;
     color: $c-preto;
   }
 
-  p {
+  .subtitulo {
     font-size: $f-pequeno;
   }
 
-  span {
+  .valor {
     margin: 1rem 0 2rem 0;
+
     font-weight: bold;
     font-size: 1.3rem;
+
     color: $c-preto;
   }
 
-  button {
-    background: $c-azul;
+  .btn_comprar {
     width: 100%;
-    color: white;
+
     @extend %flexbox;
+    padding: 1rem;
+
     text-transform: uppercase;
     font-weight: bold;
-    padding: 1rem;
+
+    background: $c-azul;
+    color: white;
 
     transition: 0.2s ease-in-out;
     &:hover {
@@ -85,37 +96,39 @@
   }
 }
 
-%carousel {
-  @extend %borda;
-
+%slider {
   @extend %flexbox;
   flex-direction: column;
 
+  @extend %borda;
   padding: 1.5rem;
 
-  h1,
-  p {
+  .titulo,
+  .subtitulo {
     margin-bottom: 1rem;
   }
 
-  h1 {
-    color: $c-preto;
+  .titulo {
     font-weight: bold;
     font-size: $f-grande;
+
+    color: $c-preto;
 
     span {
       font-size: 1rem;
     }
   }
 
-  button {
+  .btn_visualizar {
+    width: 10rem;
+
+    padding: 1rem;
     margin-top: 1rem;
 
-    background: $c-cinzaClaro;
     font-weight: bold;
     text-transform: uppercase;
-    width: 10rem;
-    padding: 1rem;
+
+    background: $c-cinzaClaro;
 
     a {
       color: $c-cinza;

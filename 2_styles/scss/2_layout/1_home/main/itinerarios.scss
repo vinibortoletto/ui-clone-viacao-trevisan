@@ -1,5 +1,11 @@
 .itinerarios {
   .itinerario {
-    @extend %carousel;
+    @extend %slider;
+  }
+}
+
+@media #{$m-pequeno} {
+  .itinerario {
+    margin: 0 0.5rem 0 0.5rem;
   }
 }

@@ -1,10 +1,17 @@
 .horarios {
   .horario {
-    @extend %carousel;
+    @extend %slider;
     text-align: center;
-    h1 {
+
+    .titulo {
       font-size: 1.5rem;
       text-transform: uppercase;
     }
+  }
+}
+
+@media #{$m-pequeno} {
+  .horario {
+    margin: 0 0.5rem 0 0.5rem;
   }
 }

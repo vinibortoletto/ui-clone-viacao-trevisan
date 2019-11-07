@@ -4,22 +4,24 @@ body {
 }
 
 button {
-  border: none;
-  background: none;
-  border-radius: 0.2rem;
   cursor: pointer;
+
+  background: none;
+  border: none;
+  border-radius: 0.2rem;
 }
 
 a {
+  cursor: pointer;
+
   text-decoration: none;
   color: $c-azulClaro;
-  cursor: pointer;
 }
 
 .icone {
-  filter: invert(100);
   width: 1.2rem;
   margin-right: 0.5rem;
+  filter: invert(100);
 }
 
 .separador {

@@ -1,6 +1,11 @@
+.banner,
+.parallax {
+  padding-top: 7.5rem;
+}
+
 .banner_primario {
   width: 100%;
-  height: 15rem;
+  height: 17rem;
   margin-bottom: 2rem;
 
   background: $c-cinza
@@ -59,10 +64,6 @@
 }
 
 @media #{$m-pequeno} {
-  .banner_primario {
-    height: 80vh;
-  }
-
   .banner_secundario .titulo {
     font-size: 2rem;
   }
@@ -74,6 +75,7 @@
 
 @media #{$m-medio} {
   .banner_primario {
+    height: 20rem;
     background-image: url("/1_images/1_layout/1_home/home_banner-primario-g.jpg");
   }
 

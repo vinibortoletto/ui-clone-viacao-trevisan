@@ -1,0 +1,44 @@
+.desktop {
+  display: none;
+}
+
+.desktop .links_box {
+  @extend %flexbox;
+  justify-content: space-between;
+
+  a {
+    color: $c-cinza;
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+      height: 7rem;
+
+      color: $c-azul;
+      border-bottom: 5px solid $c-azul;
+    }
+  }
+}
+
+.desktop .link {
+  height: 7rem;
+
+  @extend %flexbox;
+  padding: 0.7rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $f-pequeno;
+}
+
+@media #{$m-medio} {
+  .desktop {
+    display: flex;
+  }
+}
+
+@media #{$m-grande} {
+  .desktop .link {
+    padding: 1rem;
+  }
+}

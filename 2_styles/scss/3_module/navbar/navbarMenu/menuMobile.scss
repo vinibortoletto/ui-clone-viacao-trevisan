@@ -1,0 +1,94 @@
+.mobile .hamburger {
+  cursor: pointer;
+
+  width: 2rem;
+  height: 1.3rem;
+
+  @extend %flexbox;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile .hamburger .barra {
+  width: 100%;
+  height: 0.25rem;
+
+  background: $c-cinza;
+  border-radius: 0.3rem;
+}
+
+.mobile .menu {
+  width: 70vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transform: translateX(-100%);
+  opacity: 0;
+  box-shadow: 1rem 0 1rem rgba(123, 133, 143, 0.5);
+
+  transition: 0.3s ease-out;
+}
+
+.mobile .bg_menu {
+  width: 100%;
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: rgba(240, 240, 240, 0.7);
+  transform: translateX(-100%);
+  opacity: 0;
+
+  transition: 0.2s ease-out;
+}
+
+.mobile .menu .lista {
+  width: 100%;
+  height: 100%;
+
+  background: $c-branco;
+}
+
+.mobile .menu .link {
+  padding: 1rem;
+
+  font-size: $f-pequeno;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid $c-cinzaClaro;
+  background: #fafafa;
+  color: $c-cinza;
+}
+
+.mobile .menu .link.hover {
+  transition: 0.2s ease-out;
+
+  &:hover {
+    background: $c-cinzaClaro;
+    color: $c-azul;
+  }
+}
+
+.mobile .menu .topo {
+  background: $c-cinza;
+  color: $c-branco;
+  text-transform: none;
+}
+
+@media #{$m-pequeno} {
+  .menu_icone {
+    width: 2.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media #{$m-medio} {
+  .mobile {
+    display: none;
+  }
+}
