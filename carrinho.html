@@ -21,7 +21,7 @@
   <body>
     <header>
       <nav id="navbar" class="navbar">
-        <div class="navbar_topo">
+        <div id="navbar_topo" class="navbar_topo">
           <div class="links_esquerda">
             <div class="link telefone">
               <img
@@ -39,14 +39,16 @@
               />
               <span>faleconosco@trevilog.com.br</span>
             </div>
-            <div class="link carrinho">
-              <img
-                class="icone"
-                src="./1_images/0_icons/icon_carrinho.svg"
-                alt="ícone de carrinho"
-              />
-              <span>meu carrinho</span>
-            </div>
+            <a href="carrinho.html">
+              <div class="link carrinho">
+                <img
+                  class="icone"
+                  src="./1_images/0_icons/icon_carrinho.svg"
+                  alt="ícone de carrinho"
+                />
+                <span>meu carrinho</span>
+              </div>
+            </a>
           </div>
           <div class="link login">
             <img
@@ -54,16 +56,21 @@
               src="./1_images/0_icons/icon_usuario.svg"
               alt="ícone de usuário"
             />
-            <span>Olá, faça seu <a href="#">login ou cadastre-se</a></span>
+            <span
+              >Olá, faça seu
+              <a href="identificacao.html">login ou cadastre-se</a></span
+            >
           </div>
         </div>
-        <div class="navbar_menu">
+        <div id="navbar_menu" class="navbar_menu">
           <div class="logo_box">
-            <img
-              id="navbar_logo"
-              src="./1_images/2_module/1_navbar/navbar_logo.png"
-              alt="viação trevisan logo"
-            />
+            <a href="index.html">
+              <img
+                id="navbar_logo"
+                src="./1_images/2_module/1_navbar/navbar_logo.png"
+                alt="viação trevisan logo"
+              />
+            </a>
           </div>
 
           <div class="mobile">
@@ -79,99 +86,128 @@
                 <li class="link topo">
                   Faça seu <a href="#">login</a> ou <a href="#">cadastre-se</a>
                 </li>
-                <a href="#"><li class="link hover">Home</li></a>
-                <a href="#"><li class="link hover">Sobre nós</li></a>
-                <a href="#"><li class="link hover">Passagens</li></a>
-                <a href="#"
+                <a href="index.html"><li class="link hover">Home</li></a>
+                <a href="sobre-nos.html"
+                  ><li class="link hover">Sobre nós</li></a
+                >
+                <a href="passagens.html"
+                  ><li class="link hover">Passagens</li></a
+                >
+                <a href="venda-retirada-vt.html"
                   ><li class="link hover">Venda e retirada de VT</li></a
                 >
-                <a href="#"><li class="link hover">Valores do VT</li></a>
-                <a href="#"><li class="link hover">Itinerários</li></a>
-                <a href="#"><li class="link hover">Horários</li></a>
-                <a href="#"><li class="link hover">Perguntas frequentes</li></a>
-                <a href="#"
+                <a href="valores-vt.html"
+                  ><li class="link hover">Valores do VT</li></a
+                >
+                <a href="itinerarios.html"
+                  ><li class="link hover">Itinerários</li></a
+                >
+                <a href="horarios.html"><li class="link hover">Horários</li></a>
+                <a href="perguntas-frequentes.html"
+                  ><li class="link hover">Perguntas frequentes</li></a
+                >
+                <a href="estudantes-professores.html"
                   ><li class="link hover">Estudantes e professores</li></a
                 >
-                <a href="#"><li class="link hover">Termos de uso</li></a>
-                <a href="#"><li class="link hover">RH</li></a>
-                <a href="#"><li class="link hover">Contato</li></a>
+                <a href="termos-de-uso.html"
+                  ><li class="link hover">Termos de uso</li></a
+                >
+                <a href="rh.html"><li class="link hover">RH</li></a>
+                <a href="contato.html"><li class="link hover">Contato</li></a>
               </ul>
             </div>
           </div>
 
           <div class="desktop">
             <ul class="links_box">
-              <a href="#"><li class="link">Home</li></a>
-              <a href="#"><li class="link">Sobre nós</li></a>
-              <a href="#"><li class="link">Passagens</li></a>
-              <a href="#"><li class="link">Itinerários</li></a>
-              <a href="#"><li class="link">Horários</li></a>
-              <a href="#"><li class="link">Dúvidas</li></a>
-              <a href="#"><li class="link">RH</li></a>
-              <a href="#"><li class="link">Contato</li></a>
+              <a class="link" href="index.html"><li class="li">Home</li></a>
+              <a class="link" href="sobre-nos.html"
+                ><li class="li">Sobre nós</li></a
+              >
+              <a class="link" href="passagens.html"
+                ><li class="li">Passagens</li></a
+              >
+              <a class="link" href="itinerarios.html"
+                ><li class="li">Itinerários</li></a
+              >
+              <a class="link" href="horarios.html"
+                ><li class="li">Horários</li></a
+              >
+              <a class="link" href="duvidas.html"
+                ><li class="li">Dúvidas</li></a
+              >
+              <a class="link" href="rh.html"><li class="li">RH</li></a>
+              <a class="link" href="contato.html"
+                ><li class="li">Contato</li></a
+              >
             </ul>
           </div>
         </div>
       </nav>
-
-      <div class="banner">
-        <div class="banner_primario"></div>
-        <div
-          id="parallax"
-          class="banner_secundario"
-          data-parallax="scroll"
-          data-image-src="/1_images/1_layout/1_home/home_banner-secundario-g.jpg"
-          data-speed=".5"
-        >
-          <h1 class="titulo">Professoras e estudantes</h1>
-          <p class="texto">
-            Somente serão aceitos os pedidos onde a instituição de ensino é
-            reconhecida pelo MEC
-          </p>
-          <button id="btn_saibaMais" type="button">
-            <a class="link" href="#">Saiba mais</a>
-          </button>
-        </div>
-      </div>
     </header>
-    <main id="main"></main>
+
+    <main id="main">
+      <section class="secao carrinho">
+        <div class="titulo_box">
+          <h1 class="titulo">Carrinho de compras</h1>
+        </div>
+        <div class="produtos_box">
+          <div class="produtos_topo">
+            <h2 class="produto">Produto</h2>
+            <div class="items_direita">
+              <h2 class="preco">Preço</h2>
+              <h2 class="quantidade">Quantidade</h2>
+              <h2 class="subtotal">Subtotal</h2>
+            </div>
+          </div>
+          <div class="produtos_corpo">
+            <p>Não há produtos adicionados em seu carrinho.</p>
+          </div>
+        </div>
+        <div class="total_box">
+          <h2 class="total">Total</h2>
+          <h2 class="valor">R$00,00</h2>
+        </div>
+      </section>
+    </main>
+
     <footer class="rodape">
       <div class="rodape_navbar">
         <div class="categorias trevilog">
           <h1 class="titulo">Trevilog</h1>
           <div class="separador"></div>
           <ul>
-            <a hred="#" class="categorias_link">
+            <a hred="index.html" class="categorias_link">
               <li>Sobre nós</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="sobre-nos.html" class="categorias_link">
               <li>Comprar passagens</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="venda-retirada-vt.html" class="categorias_link">
               <li>Venda e retirada de VT</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="valores-vt.html" class="categorias_link">
               <li>Valores do VT</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="itinerarios.html" class="categorias_link">
               <li>Itinerários</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="horarios.html" class="categorias_link">
               <li>Horários</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="estudantes-professores.html" class="categorias_link">
               <li>Estudantes e Professores</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="perguntas-frequentes.html" class="categorias_link">
               <li>Perguntas Frequentes</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="termos-de-uso.html" class="categorias_link">
               <li>Termos de uso</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="rh.html" class="categorias_link">
               <li>RH</li>
             </a>
-            <a hred="#" class="categorias_link">
+            <a hred="contato.html" class="categorias_link">
               <li>Contato</li>
             </a>
           </ul>
@@ -182,10 +218,10 @@
         <div class="categorias usuario">
           <h1 class="titulo">Usuário</h1>
           <div class="separador"></div>
-          <a hred="#" class="categorias_link">Entrar</a>
-          <a hred="#" class="categorias_link">Cadastre-se</a>
-          <a hred="#" class="categorias_link">Minha conta</a>
-          <a hred="#" class="categorias_link">Meu carrinho</a>
+          <a hred="identificacao.html" class="categorias_link">Entrar</a>
+          <a hred="identificacao.html" class="categorias_link">Cadastre-se</a>
+          <a hred="identificacao.html" class="categorias_link">Minha conta</a>
+          <a hred="carrinho.html" class="categorias_link">Meu carrinho</a>
         </div>
 
         <div class="separador_vertical displayNone"></div>
@@ -313,5 +349,6 @@
     <script src="/3_scripts/parallax/parallax.js"></script>
 
     <script src="/3_scripts/menuMobile.js"></script>
+    <script src="/3_scripts/escodeNavbar.js"></script>
   </body>
 </html>

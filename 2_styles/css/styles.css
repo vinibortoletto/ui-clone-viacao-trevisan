@@ -1,21 +1,21 @@
 @charset "UTF-8";
-.categorias .item, .rodape_copyright, .navbar_topo .links_esquerda, .navbar_topo .link, .navbar_topo, .navbar_menu, .mobile .hamburger, .desktop li, .desktop .links_box, .tabela, .banner_secundario, .horarios .horario, .itinerarios .itinerario, .passagem .btn_comprar, .passagem, .secao .titulo_box {
+.categorias .item, .rodape_copyright, .navbar_topo .links_esquerda, .navbar_topo .link, .navbar_topo, .navbar_menu, .mobile .hamburger, .desktop li, .desktop .links_box, .secao.carrinho .produtos_corpo, .tabela, .banner_secundario, .horarios .horario, .itinerarios .itinerario, .passagem .btn_comprar, .passagem, .secao_home .titulo_box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.secao .titulo_box {
+.secao_home .titulo_box {
   flex-direction: column;
   margin-bottom: 1rem;
 }
-.secao .titulo_box .titulo {
+.secao_home .titulo_box .titulo {
   margin-bottom: 0.5rem;
   font-weight: bold;
   font-size: 1.8rem;
   color: #0098da;
 }
-.secao .titulo_box .subtitulo {
+.secao_home .titulo_box .subtitulo {
   font-size: 0.8rem;
   color: #637281;
 }
@@ -28,7 +28,9 @@
   border-radius: 0.2rem;
 }
 
-.tabela, .horarios .horario, .itinerarios .itinerario, .passagem .img_passagem, .passagem {
+.secao .produtos_box,
+.secao .produtos_topo,
+.secao .total_box, .tabela, .horarios .horario, .itinerarios .itinerario, .passagem .img_passagem, .passagem {
   border: 1px solid #e2e2e2;
 }
 
@@ -96,6 +98,19 @@
 }
 .horarios .horario .btn_visualizar a, .itinerarios .itinerario .btn_visualizar a {
   color: #637281;
+}
+
+.secao {
+  padding: 8rem 5vw 0 5vw;
+}
+.secao .titulo_box {
+  background: #f0f0f0;
+  padding: 3rem 5vw 3rem 5vw;
+  margin: 0 -5vw 0 -5vw;
+  margin-bottom: 3rem;
+}
+.secao .titulo {
+  font-size: 1.8rem;
 }
 
 .slick-dots li {
@@ -543,15 +558,71 @@ a {
     margin: 0 0.5rem 0 0.5rem;
   }
 }
-.secao {
+.secao_home {
   margin-bottom: 5rem;
   padding: 0 5vw 0 5vw;
 }
 
-.secao.horarios {
+.secao_home.horarios {
   margin-bottom: 0;
 }
 
+.secao {
+  display: grid;
+}
+.secao.carrinho .produtos_topo {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: #e2e2e2;
+  font-weight: bold;
+}
+
+.secao.carrinho .produtos_corpo {
+  height: 10rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.secao.carrinho .preco,
+.secao.carrinho .subtotal {
+  display: none;
+}
+
+.secao.carrinho .total_box {
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+  justify-self: end;
+  padding: 1rem;
+  background: #e2e2e2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+  .secao {
+    padding-top: 10rem;
+  }
+
+  .secao.carrinho .total_box {
+    width: 25rem;
+  }
+
+  .secao.carrinho .items_direita {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .secao.carrinho .preco,
+.secao.carrinho .subtotal {
+    display: flex;
+  }
+  .secao.carrinho .preco,
+.secao.carrinho .quantidade,
+.secao.carrinho .subtotal {
+    margin-right: 5rem;
+  }
+}
 .desktop {
   display: none;
 }

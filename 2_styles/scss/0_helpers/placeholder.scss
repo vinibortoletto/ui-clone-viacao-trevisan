@@ -136,3 +136,18 @@
     }
   }
 }
+
+%secaoTitulo {
+  padding: 8rem 5vw 0 5vw;
+
+  .titulo_box {
+    background: $c-branco;
+    padding: 3rem 5vw 3rem 5vw;
+    margin: 0 -5vw 0 -5vw;
+    margin-bottom: 3rem;
+  }
+
+  .titulo {
+    font-size: $f-grande;
+  }
+}

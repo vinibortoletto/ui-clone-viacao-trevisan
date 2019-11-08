@@ -3,12 +3,12 @@
 @import "./itinerarios.scss";
 @import "./horarios.scss";
 
-.secao {
+.secao_home {
   @extend %sectionHome;
   margin-bottom: 5rem;
   padding: 0 5vw 0 5vw;
 }
 
-.secao.horarios {
+.secao_home.horarios {
   margin-bottom: 0;
 }
