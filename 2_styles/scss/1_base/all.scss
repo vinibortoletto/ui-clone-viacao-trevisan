@@ -27,3 +27,31 @@ a {
 .separador {
   @extend %separador;
 }
+
+.separador_vertical {
+  @extend %separadorVertical;
+}
+
+.campo_input {
+  width: 100%;
+
+  padding: 1rem;
+
+  @extend %borda;
+  border-radius: $b-input;
+}
+
+.msg_erro {
+  width: 100%;
+  padding: 0.5rem;
+
+  font-size: $f-pequeno;
+  text-align: end;
+  font-style: italic;
+
+  color: crimson;
+}
+
+.input_erro {
+  border: 1px solid crimson;
+}

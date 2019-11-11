@@ -12,6 +12,7 @@ $c-azulClaro: #84f1ff;
 // Fonte --------------------------------------
 
 $f-pequeno: 0.8rem;
+$f-medio: 1.4rem;
 $f-grande: 1.8rem;
 
 // Media queries --------------------------------------
@@ -19,3 +20,7 @@ $f-grande: 1.8rem;
 $m-pequeno: "only screen and (min-width: 600px)";
 $m-medio: "only screen and (min-width: 1000px)";
 $m-grande: "only screen and (min-width: 1200px)";
+
+// Bordas --------------------------------------
+
+$b-input: 0.3em;

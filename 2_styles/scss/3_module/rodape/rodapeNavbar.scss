@@ -65,15 +65,11 @@
 }
 
 .rodape_navbar .separador_vertical {
-  width: 1px;
-  height: 10rem;
-
-  background: linear-gradient(to bottom, transparent, $c-cinza, transparent);
-  justify-self: center;
+  @extend %separadorVertical;
 }
 
-.rodape_navbar .separador_vertical.displayNone {
-  display: none;
+.rodape_navbar .separador_vertical.visivel {
+  display: block;
 }
 
 @media #{$m-pequeno} {
@@ -88,7 +84,7 @@
     justify-self: center;
   }
 
-  .rodape_navbar .separador_vertical.displayNone {
+  .rodape_navbar .separador_vertical {
     display: block;
   }
 

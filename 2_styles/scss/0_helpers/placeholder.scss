@@ -137,7 +137,7 @@
   }
 }
 
-%secaoTitulo {
+%paginaTitulo {
   padding: 8rem 5vw 0 5vw;
 
   .titulo_box {
@@ -150,4 +150,14 @@
   .titulo {
     font-size: $f-grande;
   }
+}
+
+%separadorVertical {
+  display: none;
+
+  width: 1px;
+  height: 10rem;
+
+  background: linear-gradient(to bottom, transparent, $c-cinza, transparent);
+  justify-self: center;
 }

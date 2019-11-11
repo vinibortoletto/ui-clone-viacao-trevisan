@@ -1,0 +1,45 @@
+.form {
+  .titulo {
+    padding: 1rem 1rem 1rem 0;
+
+    font-size: $f-medio;
+    font-weight: bold;
+  }
+
+  .btn {
+    width: 100%;
+
+    padding: 1rem;
+    margin-top: 1rem;
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: $c-branco;
+    background: $c-cinza;
+
+    transition: 0.2s ease-out;
+    &:hover {
+      background: #596775;
+    }
+  }
+}
+
+#form_login {
+  .esqueci_senha {
+    margin-top: 1rem;
+  }
+
+  .esqueci_senha .texto {
+    color: $c-cinza;
+    text-decoration: underline;
+  }
+}
+
+#form_cadastro {
+  margin-top: 2rem;
+}
+
+.identificacao .separador_vertical {
+  display: block;
+}

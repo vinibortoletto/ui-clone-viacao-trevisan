@@ -6,11 +6,13 @@
   background: $c-cinza;
   color: $c-branco;
 
-  transition: 0.3s ease-out; //FIXME:
-
   .link {
     @extend %flexbox;
     padding: 0.79rem 1rem 0.79rem 1rem;
+  }
+
+  .carrinho {
+    padding-right: 0;
   }
 
   .telefone,

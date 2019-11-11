@@ -1,5 +1,5 @@
-.secao {
-  @extend %secaoTitulo;
+.pagina {
+  @extend %paginaTitulo;
   display: grid;
 
   .produtos_box,
@@ -9,7 +9,7 @@
   }
 }
 
-.secao.carrinho .produtos_topo {
+.pagina.carrinho .produtos_topo {
   padding: 1rem;
 
   display: flex;
@@ -19,7 +19,7 @@
   font-weight: bold;
 }
 
-.secao.carrinho .produtos_corpo {
+.pagina.carrinho .produtos_corpo {
   height: 10rem;
 
   @extend %flexbox;
@@ -28,14 +28,14 @@
   text-align: center;
 }
 
-.secao.carrinho {
+.pagina.carrinho {
   .preco,
   .subtotal {
     display: none;
   }
 }
 
-.secao.carrinho .total_box {
+.pagina.carrinho .total_box {
   width: 15rem;
 
   display: flex;
@@ -51,15 +51,15 @@
 }
 
 @media #{$m-medio} {
-  .secao {
+  .pagina {
     padding-top: 10rem;
   }
 
-  .secao.carrinho .total_box {
+  .pagina.carrinho .total_box {
     width: 25rem;
   }
 
-  .secao.carrinho {
+  .pagina.carrinho {
     .items_direita {
       display: flex;
       justify-content: flex-end;
