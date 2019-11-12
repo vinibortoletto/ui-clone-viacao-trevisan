@@ -43,3 +43,18 @@
 .identificacao .separador_vertical {
   display: block;
 }
+
+@media #{$m-medio} {
+  .forms_box {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+  }
+
+  .identificacao .separador_vertical {
+    align-self: center;
+  }
+
+  #form_cadastro {
+    margin-top: 0;
+  }
+}
