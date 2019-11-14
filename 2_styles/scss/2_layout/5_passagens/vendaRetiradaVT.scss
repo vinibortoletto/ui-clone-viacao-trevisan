@@ -1,0 +1,41 @@
+.pagina.vendaRetiradaVT {
+  .info_box {
+    .titulo {
+      font-weight: bold;
+      font-size: $f-medio;
+      margin-bottom: 1rem;
+    }
+
+    .horarioFuncionamento {
+      font-weight: bold;
+      margin: 2rem 0 0.5rem 0;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .separador {
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+@media #{$m-medio} {
+  .secao.vendaRetiradaVT {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+
+    .separador {
+      display: none;
+    }
+
+    .separador_vertical {
+      display: block;
+    }
+  }
+}

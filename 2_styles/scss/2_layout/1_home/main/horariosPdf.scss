@@ -1,8 +1,8 @@
-.tabelas {
+.horariosPdf .tabelas {
   display: grid;
 }
 
-.tabela {
+.horariosPdf .tabela {
   @extend %borda;
   color: $c-cinza;
 
@@ -24,21 +24,21 @@
   }
 }
 
-.tabela.charqueada {
+.horariosPdf .tabela.charqueada {
   margin-bottom: 0;
 }
 
 @media #{$m-pequeno} {
-  .tabelas {
+  .horariosPdf .tabelas {
     grid-template-columns: 1fr 1fr;
   }
 
-  .tabela {
+  .horariosPdf .tabela {
     min-width: 15rem;
     margin-right: 1rem;
   }
 
-  .tabela.charqueada {
+  .horariosPdf .tabela.charqueada {
     margin-right: 0;
     margin-left: 1rem;
   }

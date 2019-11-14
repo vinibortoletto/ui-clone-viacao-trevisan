@@ -19,9 +19,13 @@ a {
 }
 
 .icone {
-  width: 1.2rem;
+  width: 1rem;
   margin-right: 0.5rem;
   filter: invert(100);
+}
+
+.icone.carrinho {
+  transform: scaleX(-1);
 }
 
 .separador {
@@ -54,4 +58,25 @@ a {
 
 .input_erro {
   border: 1px solid crimson;
+}
+
+.pagina {
+  @extend %paginaTitulo;
+  display: grid;
+}
+
+.secao .titulo_box {
+  padding: 0;
+  margin: 0;
+
+  .titulo {
+    font-size: 1rem;
+    color: $c-branco;
+  }
+}
+
+@media #{$m-medio} {
+  .pagina {
+    padding-top: 10rem;
+  }
 }

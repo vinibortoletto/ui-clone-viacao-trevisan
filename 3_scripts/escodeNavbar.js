@@ -1,13 +1,11 @@
-// TODO: esconder navbarTOP onscrolldown
-// TODO: dominuir tamanho navbarMenu/logo onscrolldown
-
 const navbarTopo = document.getElementById("navbar_topo");
-const navbarMenu = document.getElementById("navbar_menu");
+// const navbarMenu = document.getElementById("navbar_menu");
 const navbar = document.getElementById("navbar");
 const navbarLogo = document.getElementById("navbar_logo");
 
-const navbarLinksTexto = document.querySelectorAll(".desktop li");
+const navbarLinksTexto = document.querySelectorAll(".desktop .texto");
 const navbarLinks = document.querySelectorAll(".desktop .link");
+const dropdownBox = document.querySelectorAll(".dropdown_box");
 
 const banner = document.querySelector(".banner");
 const bannerParallax = document.querySelector(".parallax");
@@ -28,6 +26,10 @@ $(window).scroll(() => {
     navbarLinksTexto.forEach(texto => {
       texto.style.height = "4rem";
     });
+
+    dropdownBox.forEach(dropdown => {
+      dropdown.style.height = "4rem";
+    });
   } else {
     navbar.style.transform = "translateY(0%)";
 
@@ -45,44 +47,9 @@ $(window).scroll(() => {
     navbarLinksTexto.forEach(texto => {
       texto.style.height = "7rem";
     });
+    dropdownBox.forEach(dropdown => {
+      dropdown.style.height = "7rem";
+    });
   }
   posicaoInicial = posicaoAtual;
 });
-
-// window.addEventListener("scroll", function() {
-//   let posicaoAtual = window.pageYOffset;
-
-//   if (posicaoInicial > posicaoAtual) {
-//     document.getElementById("navbar").style.display = "flex";
-//     document.getElementById("navbar").style.opacity = "1";
-//   } else {
-//     navbarTopo.style.opacity = "0";
-//     document.getElementById("navbar").style.opacity = "0";
-
-//   }
-//   prevScrollpos = currentScrollPos;
-// });
-
-// toggleNavbar = () => {
-//   let prevScrollpos = window.pageYOffset;
-
-//   window.addEventListener("scroll", function() {
-//     let currentScrollPos = window.pageYOffset;
-
-//     if (menuActive === true) {
-//       return;
-//     }
-
-//     if (prevScrollpos > currentScrollPos) {
-//       document.getElementById("navbar").style.display = "flex";
-//       document.getElementById("navbar").style.opacity = "1";
-//     } else {
-//       document.getElementById("navbar").style.opacity = "0";
-
-//       setTimeout(() => {
-//         document.getElementById("navbar").style.display = "none";
-//       }, 500);
-//     }
-//     prevScrollpos = currentScrollPos;
-//   });
-// };

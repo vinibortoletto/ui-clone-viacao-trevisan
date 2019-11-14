@@ -1,0 +1,28 @@
+.itinerarios {
+  .tabela_box {
+    @extend %tabela;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  #tabela {
+    width: 50rem;
+
+    .bgCinzaEscuro {
+      background: #4d5865;
+    }
+
+    th {
+      border: 1px solid #7e93a8;
+    }
+
+    .textAlignLeft {
+      text-align: left;
+    }
+  }
+}

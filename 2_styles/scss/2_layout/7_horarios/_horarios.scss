@@ -1,0 +1,39 @@
+.pagina.horarios .secao {
+  margin-bottom: 3rem;
+
+  .topo {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+
+    background: $c-cinza;
+    color: $c-branco;
+    font-weight: bold;
+  }
+
+  .titulo {
+    font-size: $f-medio;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .subtitulo {
+    color: $c-azul;
+    font-weight: bold;
+  }
+
+  .diaSemana {
+    margin-bottom: 1rem;
+  }
+
+  .horarios_box {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 1rem;
+
+    span {
+      margin: 0 1rem 1rem 0;
+    }
+  }
+}

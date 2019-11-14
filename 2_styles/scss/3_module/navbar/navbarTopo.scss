@@ -15,6 +15,10 @@
     padding-right: 0;
   }
 
+  .carrinho .icone {
+    width: 1.2rem;
+  }
+
   .telefone,
   .login {
     padding-left: 0;
@@ -22,6 +26,14 @@
 
   .login {
     padding-right: 0;
+  }
+
+  .login a {
+    color: $c-azulClaro;
+  }
+
+  .login .icone {
+    width: 0.9rem;
   }
 
   .links_esquerda {
@@ -36,10 +48,6 @@
   .login {
     display: none;
   }
-}
-
-.navbar_topo .login a {
-  color: $c-azulClaro;
 }
 
 @media #{$m-pequeno} {

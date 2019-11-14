@@ -1,7 +1,4 @@
-.pagina {
-  @extend %paginaTitulo;
-  display: grid;
-
+.pagina.carrinho {
   .produtos_box,
   .produtos_topo,
   .total_box {

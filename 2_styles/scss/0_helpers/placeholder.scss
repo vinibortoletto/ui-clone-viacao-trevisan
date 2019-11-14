@@ -161,3 +161,46 @@
   background: linear-gradient(to bottom, transparent, $c-cinza, transparent);
   justify-self: center;
 }
+
+%tabela {
+  overflow-x: auto;
+
+  #tabela {
+    @extend %borda;
+
+    thead {
+      background: $c-cinza;
+    }
+
+    th {
+      font-size: 1rem;
+      color: $c-branco;
+      font-weight: bold;
+
+      border-right: 1px solid #7e93a8;
+      &:nth-last-child(1) {
+        border-right: none;
+      }
+    }
+
+    td {
+      @extend %borda;
+
+      &:nth-last-child(1) {
+        border-right: none;
+      }
+    }
+
+    th,
+    td {
+      padding: 1rem;
+    }
+  }
+
+  .valoresDoVT .observacao {
+    margin-top: 1rem;
+
+    font-style: italic;
+    font-size: $f-pequeno;
+  }
+}

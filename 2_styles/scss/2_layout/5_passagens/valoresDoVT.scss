@@ -1,0 +1,14 @@
+.valoresDoVT .tabela_box {
+  @extend %tabela;
+
+  #tabela {
+    width: 100%;
+  }
+}
+
+.valoresDoVT .observacao {
+  margin-top: 1rem;
+
+  font-style: italic;
+  font-size: $f-pequeno;
+}

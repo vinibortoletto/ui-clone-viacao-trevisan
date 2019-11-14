@@ -1,0 +1,21 @@
+.pagina.perguntasFrequentes .pergunta {
+  margin-bottom: 2rem;
+
+  .titulo {
+    margin-bottom: 0.5rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .texto {
+    line-height: $lh-padrao;
+  }
+
+  .texto_link {
+    margin-top: 1rem;
+  }
+  .link {
+    color: $c-azul;
+  }
+}
