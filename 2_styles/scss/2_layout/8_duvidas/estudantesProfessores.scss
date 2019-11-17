@@ -1,0 +1,22 @@
+.pagina.estudantesProfessores {
+  .pergunta {
+    margin-bottom: 2rem;
+
+    .titulo {
+      margin-bottom: 0.5rem;
+
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .texto {
+      line-height: $lh-padrao;
+    }
+  }
+
+  .observacao .texto {
+    font-size: $f-pequeno;
+    font-style: italic;
+    color: crimson;
+  }
+}

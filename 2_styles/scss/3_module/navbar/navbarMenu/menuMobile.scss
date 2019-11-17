@@ -27,7 +27,6 @@
 
   transform: translateX(-100%);
   opacity: 0;
-  box-shadow: 1rem 0 1rem rgba(123, 133, 143, 0.5);
 
   transition: 0.3s ease-out;
 }
@@ -40,7 +39,8 @@
   top: 0;
   left: 0;
 
-  background: rgba(240, 240, 240, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+
   transform: translateX(-100%);
   opacity: 0;
 
@@ -78,6 +78,13 @@
   background: $c-cinza;
   color: $c-branco;
   text-transform: none;
+}
+
+.mobile .link.topo a {
+  color: $c-azulClaro;
+}
+
+.menuMobile_open {
 }
 
 @media #{$m-pequeno} {

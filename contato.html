@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Identificação | Viação Trevisan</title>
+    <title>Termos de uso | Viação Trevisan</title>
 
     <!-- FONTES -->
     <link
@@ -183,77 +183,95 @@
     </header>
 
     <main id="main">
-      <div class="pagina identificacao">
+      <div class="pagina contato">
         <div class="titulo_box">
-          <h1 class="titulo">Identificação</h1>
+          <h1 class="titulo">Contato</h1>
         </div>
 
-        <div class="forms_box">
-          <section class="login">
-            <form class="form" id="form_login">
-              <div class="titulo">
-                <label for="login">Faça seu login</label>
-              </div>
+        <div class="descricao">
+          <p class="texto">
+            Entre em contato conosco através do formulário abaixo para
+            informações ou para resolver qualquer dúvida existente.
+          </p>
+        </div>
+
+        <form id="form" class="form">
+          <div class="campos_principais">
+            <div class="campo_input-box">
               <input
                 class="campo_input"
-                type="email"
-                id="email_login"
-                placeholder="E-mail"
-              />
-
-              <div class="msg_erro" id="emailLogin_erro"></div>
-
-              <input
-                class="campo_input"
-                type="password"
-                id="senha"
-                placeholder="Senha"
-              />
-
-              <div class="msg_erro" id="senha_erro"></div>
-
-              <button class="btn" id="btn_entrar" type="submit">
-                Entrar
-              </button>
-              <div class="esqueci_senha">
-                <a class="link" href="#"
-                  ><p class="texto">esqueci minha senha</p></a
-                >
-              </div>
-            </form>
-          </section>
-
-          <div class="separador_vertical"></div>
-
-          <section class="cadastro">
-            <form class="form" id="form_cadastro">
-              <div class="titulo">
-                <label for="cadastro">Cadastre-se</label>
-              </div>
-              <input
-                class="campo_input"
-                type="nome"
+                type="text"
                 id="nome"
-                placeholder="Nome"
+                placeholder="Nome:"
               />
-
               <div class="msg_erro" id="nome_erro"></div>
+            </div>
 
+            <div class="campo_input-box">
               <input
                 class="campo_input"
-                type="email"
-                id="email_cadastro"
-                placeholder="Email"
+                type="text"
+                id="email"
+                placeholder="Email:"
               />
+              <div class="msg_erro" id="email_erro"></div>
+            </div>
 
-              <div class="msg_erro" id="emailCadastro_erro"></div>
+            <div class="campo_input-box">
+              <input
+                class="campo_input"
+                type="text"
+                id="telefone"
+                placeholder="Telefone:"
+              />
+              <div class="msg_erro" id="telefone_erro"></div>
+            </div>
 
-              <button class="btn" id="btn_entrar" type="submit">
-                Cadastrar
-              </button>
-            </form>
-          </section>
-        </div>
+            <div class="campo_input-box">
+              <input
+                class="campo_input"
+                type="text"
+                id="celular"
+                placeholder="Celular:"
+              />
+              <div class="msg_erro"></div>
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="text"
+              class="campo_input"
+              id="assunto"
+              placeholder="Assunto:"
+            />
+            <div class="msg_erro"></div>
+          </div>
+
+          <div>
+            <textarea
+              class="campo_input"
+              name="msg"
+              id="msg"
+              placeholder="Mensagem:"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="msg_erro" id="msg_erro"></div>
+          </div>
+
+          <div>
+            <div class="anexarAquivo">
+              <p class="texto">Anexar currículo:</p>
+              <input class="campo_input" type="file" />
+            </div>
+            <div class="msg_erro"></div>
+          </div>
+
+          <div class="btn_enviar-box">
+            <button id="btn_enviar" type="submit">Enviar</button>
+          </div>
+        </form>
       </div>
     </main>
 
@@ -428,11 +446,13 @@
     <script src="/3_scripts/escodeNavbar.js"></script>
 
     <!-- Forms -->
+    <script src="/3_scripts/formMask/jquery.mask.min.js"></script>
 
-    <script src="/3_scripts/formularios/validaEmail.js"></script>
-    <script src="/3_scripts/formularios/validaSenha.js"></script>
     <script src="/3_scripts/formularios/validaNome.js"></script>
+    <script src="/3_scripts/formularios/validaEmail.js"></script>
+    <script src="/3_scripts/formularios/validaTelefone.js"></script>
+    <script src="/3_scripts/formularios/validaMsg.js"></script>
 
-    <script src="/3_scripts/formularios/validaIdentificacao.js"></script>
+    <script src="/3_scripts/formularios/validaForm.js"></script>
   </body>
 </html>

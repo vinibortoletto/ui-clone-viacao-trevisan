@@ -1,0 +1,35 @@
+.pagina.termosDeUso .termosDeUso_box {
+  .titulo {
+    margin-bottom: 0.5rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .texto {
+    line-height: $lh-padrao;
+    text-align: justify;
+  }
+
+  .secao {
+    margin-top: 2rem;
+
+    .titulo {
+      text-indent: 1rem;
+      text-transform: uppercase;
+    }
+
+    .texto {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 2rem;
+    }
+  }
+
+  .link {
+    color: $c-azul;
+    font-weight: bold;
+  }
+}

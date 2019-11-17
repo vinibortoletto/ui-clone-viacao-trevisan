@@ -1,0 +1,7 @@
+.pagina.contato {
+  .descricao {
+    margin-bottom: 2rem;
+  }
+
+  @extend %form;
+}

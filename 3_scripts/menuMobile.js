@@ -3,6 +3,7 @@ const menuMobileBox = document.getElementById("mobileMenu");
 const menuMobileBg = document.getElementById("bg_mobileMenu");
 
 menuMobileBtn.addEventListener("click", () => {
+  menuMobileBox.classList.add("menuMobile_open");
   menuMobileBox.style.transform = "translateX(0%)";
   menuMobileBox.style.opacity = "1";
 
@@ -13,6 +14,7 @@ menuMobileBtn.addEventListener("click", () => {
 });
 
 menuMobileBg.addEventListener("click", () => {
+  menuMobileBox.classList.remove("menuMobile_open");
   menuMobileBg.style.opacity = "0";
   setTimeout(() => {
     menuMobileBg.style.transform = "translateX(-100%)";

@@ -204,3 +204,56 @@
     font-size: $f-pequeno;
   }
 }
+
+%form {
+  .form {
+    .anexarAquivo {
+      margin-top: 1rem;
+
+      .texto {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .btn_enviar-box {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        width: 10rem;
+        padding: 1rem;
+
+        background: $c-azul;
+        color: $c-branco;
+
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    textarea {
+      font-family: "Lato", sans-serif;
+    }
+
+    .campos_principais {
+      display: grid;
+    }
+  }
+
+  @media #{$m-pequeno} {
+    .form {
+      .campos_principais {
+        grid-template-columns: 1fr 1fr;
+
+        .campo_input-box:nth-child(odd) {
+          margin-right: 0.5rem;
+        }
+        .campo_input-box:nth-child(even) {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}

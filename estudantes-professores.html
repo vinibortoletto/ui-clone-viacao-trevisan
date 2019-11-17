@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Identificação | Viação Trevisan</title>
+    <title>Estudantes e professores | Viação Trevisan</title>
 
     <!-- FONTES -->
     <link
@@ -183,77 +183,74 @@
     </header>
 
     <main id="main">
-      <div class="pagina identificacao">
+      <div class="pagina estudantesProfessores">
         <div class="titulo_box">
-          <h1 class="titulo">Identificação</h1>
+          <h1 class="titulo">Estudantes Professores</h1>
         </div>
+        <section class="secao">
+          <div class="pergunta">
+            <h1 class="titulo">Quem tem direito?</h1>
+            <p class="texto">
+              Estudantes regularmente matriculados e os professores no exercício
+              da profissão, pertencentes aos níveis escolares de educação
+              básica, ensinos fundamental e médio e de curso superior de
+              graduação, ministrados em escolas oficiais ou oficializadas, bem
+              como de cursos regulares da educação profissional com duração
+              mínima de 1 (um) ano.
+            </p>
+          </div>
 
-        <div class="forms_box">
-          <section class="login">
-            <form class="form" id="form_login">
-              <div class="titulo">
-                <label for="login">Faça seu login</label>
-              </div>
-              <input
-                class="campo_input"
-                type="email"
-                id="email_login"
-                placeholder="E-mail"
-              />
+          <div class="pergunta">
+            <h1 class="titulo">
+              Alunos e Professores
+            </h1>
+            <p class="texto">
+              Considerando que o artigo 81 do Decreto nº 29.913, de 12 de maio
+              de 1989, alterado pelo Decreto nº 30.945, de 12 de dezembro de
+              1989, dispõe sobre o desconto de 50% (cinqüenta por cento) nos
+              preços das passagens aos estudantes e professores das escolas
+              oficiais e oficializadas, nos deslocamentos entre a escola e sua
+              residência, nos dias letivos; segue abaixo comunicado sobre os
+              procedimentos para obtenção da carteira de passe escolar.
+            </p>
+          </div>
 
-              <div class="msg_erro" id="emailLogin_erro"></div>
+          <div class="pergunta">
+            <h1 class="titulo">
+              Estudantes e Professores que já possuem a carteira de passe
+              Escolar
+            </h1>
+            <p class="texto">
+              Para os alunos e professores que já possuem a carteira de passe
+              Escolar do ano letivo emitido pela Empresa, é necessário apenas a
+              renovação no semestre seguinte. Sem custo algum.
+            </p>
+          </div>
 
-              <input
-                class="campo_input"
-                type="password"
-                id="senha"
-                placeholder="Senha"
-              />
+          <div class="pergunta">
+            <h1 class="titulo">
+              Estudantes ou Professores que não possuem a carteira de passe
+              Escolar
+            </h1>
+            <p class="texto">
+              Para os usuários que desejam adquiri-la, segue a relação de
+              documentos necessários: Cópia do RG. Cópia do comprovante de
+              residência (água, luz, telefone) recente, em nome do aluno, ou do
+              cônjuge, ou dos pais, ou do responsável. Declaração escolar,
+              original ou cópia autenticada *. 02 Fotos 3×4 recente. * Somente
+              serão aceitos os pedidos onde a instituição de ensino é
+              reconhecida pelo MEC A empresa fornece a carteirinha sem custo ao
+              usuário.
+            </p>
+          </div>
 
-              <div class="msg_erro" id="senha_erro"></div>
-
-              <button class="btn" id="btn_entrar" type="submit">
-                Entrar
-              </button>
-              <div class="esqueci_senha">
-                <a class="link" href="#"
-                  ><p class="texto">esqueci minha senha</p></a
-                >
-              </div>
-            </form>
-          </section>
-
-          <div class="separador_vertical"></div>
-
-          <section class="cadastro">
-            <form class="form" id="form_cadastro">
-              <div class="titulo">
-                <label for="cadastro">Cadastre-se</label>
-              </div>
-              <input
-                class="campo_input"
-                type="nome"
-                id="nome"
-                placeholder="Nome"
-              />
-
-              <div class="msg_erro" id="nome_erro"></div>
-
-              <input
-                class="campo_input"
-                type="email"
-                id="email_cadastro"
-                placeholder="Email"
-              />
-
-              <div class="msg_erro" id="emailCadastro_erro"></div>
-
-              <button class="btn" id="btn_entrar" type="submit">
-                Cadastrar
-              </button>
-            </form>
-          </section>
-        </div>
+          <div class="observacao">
+            <p class="texto">
+              Em caso de dúvidas ou pedido de informações, consulte a
+              administração.
+            </p>
+          </div>
+        </section>
       </div>
     </main>
 
@@ -426,13 +423,6 @@
 
     <script src="/3_scripts/menuMobile.js"></script>
     <script src="/3_scripts/escodeNavbar.js"></script>
-
-    <!-- Forms -->
-
-    <script src="/3_scripts/formularios/validaEmail.js"></script>
-    <script src="/3_scripts/formularios/validaSenha.js"></script>
-    <script src="/3_scripts/formularios/validaNome.js"></script>
-
-    <script src="/3_scripts/formularios/validaIdentificacao.js"></script>
+    <script src="/3_scripts/formularios/identificacao.js"></script>
   </body>
 </html>

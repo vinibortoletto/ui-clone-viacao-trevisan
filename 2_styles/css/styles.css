@@ -150,6 +150,44 @@
   font-size: 0.8rem;
 }
 
+.pagina.contato .form .anexarAquivo, .pagina.rh .form .anexarAquivo {
+  margin-top: 1rem;
+}
+.pagina.contato .form .anexarAquivo .texto, .pagina.rh .form .anexarAquivo .texto {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.pagina.contato .form .btn_enviar-box, .pagina.rh .form .btn_enviar-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.pagina.contato .form .btn_enviar-box button, .pagina.rh .form .btn_enviar-box button {
+  width: 10rem;
+  padding: 1rem;
+  background: #0098da;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.pagina.contato .form textarea, .pagina.rh .form textarea {
+  font-family: "Lato", sans-serif;
+}
+.pagina.contato .form .campos_principais, .pagina.rh .form .campos_principais {
+  display: grid;
+}
+@media only screen and (min-width: 600px) {
+  .pagina.contato .form .campos_principais, .pagina.rh .form .campos_principais {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pagina.contato .form .campos_principais .campo_input-box:nth-child(odd), .pagina.rh .form .campos_principais .campo_input-box:nth-child(odd) {
+    margin-right: 0.5rem;
+  }
+  .pagina.contato .form .campos_principais .campo_input-box:nth-child(even), .pagina.rh .form .campos_principais .campo_input-box:nth-child(even) {
+    margin-left: 0.5rem;
+  }
+}
+
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -916,6 +954,61 @@ a {
   color: #0098da;
 }
 
+.pagina.estudantesProfessores .pergunta {
+  margin-bottom: 2rem;
+}
+.pagina.estudantesProfessores .pergunta .titulo {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.pagina.estudantesProfessores .pergunta .texto {
+  line-height: 1.5;
+}
+.pagina.estudantesProfessores .observacao .texto {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: crimson;
+}
+
+.pagina.termosDeUso .termosDeUso_box .titulo {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.pagina.termosDeUso .termosDeUso_box .texto {
+  line-height: 1.5;
+  text-align: justify;
+}
+.pagina.termosDeUso .termosDeUso_box .secao {
+  margin-top: 2rem;
+}
+.pagina.termosDeUso .termosDeUso_box .secao .titulo {
+  text-indent: 1rem;
+  text-transform: uppercase;
+}
+.pagina.termosDeUso .termosDeUso_box .secao .texto {
+  margin-bottom: 1rem;
+}
+.pagina.termosDeUso .termosDeUso_box .secao ul {
+  padding-left: 2rem;
+}
+.pagina.termosDeUso .termosDeUso_box .link {
+  color: #0098da;
+  font-weight: bold;
+}
+
+.pagina.rh .descricao {
+  margin-bottom: 2rem;
+}
+.pagina.rh .texto.marginTop {
+  margin-top: 1rem;
+}
+
+.pagina.contato .descricao {
+  margin-bottom: 2rem;
+}
+
 .desktop {
   display: none;
 }
@@ -1036,7 +1129,6 @@ a {
   left: 0;
   transform: translateX(-100%);
   opacity: 0;
-  box-shadow: 1rem 0 1rem rgba(123, 133, 143, 0.5);
   transition: 0.3s ease-out;
 }
 
@@ -1046,7 +1138,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(240, 240, 240, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   transform: translateX(-100%);
   opacity: 0;
   transition: 0.2s ease-out;
@@ -1079,6 +1171,10 @@ a {
   background: #637281;
   color: #f0f0f0;
   text-transform: none;
+}
+
+.mobile .link.topo a {
+  color: #84f1ff;
 }
 
 @media only screen and (min-width: 600px) {

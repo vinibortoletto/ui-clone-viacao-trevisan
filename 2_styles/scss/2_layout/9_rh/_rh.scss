@@ -1,0 +1,11 @@
+.pagina.rh {
+  .descricao {
+    margin-bottom: 2rem;
+  }
+
+  @extend %form;
+
+  .texto.marginTop {
+    margin-top: 1rem;
+  }
+}
