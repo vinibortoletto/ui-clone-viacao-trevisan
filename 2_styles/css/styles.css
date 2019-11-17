@@ -28,7 +28,7 @@
   border-radius: 0.2rem;
 }
 
-.pagina.carrinho .produtos_box,
+.dropdown, .pagina.carrinho .produtos_box,
 .pagina.carrinho .produtos_topo,
 .pagina.carrinho .total_box, .horariosPdf .tabela, .campo_input, .itinerarios .tabela_box #tabela td, .valoresDoVT .tabela_box #tabela td, .itinerarios .tabela_box #tabela, .valoresDoVT .tabela_box #tabela, .horarios .horario, .itinerarios .itinerario, .passagem .img_passagem, .passagem {
   border: 1px solid #e2e2e2;
@@ -1050,6 +1050,7 @@ a {
   visibility: hidden;
   transform: translateY(-10%);
   opacity: 0;
+  border-bottom: none;
   transition: all 0.3s ease-out;
 }
 .dropdown .dropdown_link {
@@ -1151,7 +1152,7 @@ a {
 }
 
 .mobile .menu .link {
-  padding: 1rem;
+  padding: 0.9rem 1rem 0.9rem 1rem;
   font-size: 0.8rem;
   text-transform: uppercase;
   border-bottom: 1px solid #e2e2e2;

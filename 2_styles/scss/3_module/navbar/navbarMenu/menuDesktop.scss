@@ -49,6 +49,9 @@
   transform: translateY(-10%);
   opacity: 0;
 
+  @extend %borda;
+  border-bottom: none;
+
   transition: all 0.3s ease-out;
 
   .dropdown_link {
