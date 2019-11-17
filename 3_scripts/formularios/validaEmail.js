@@ -2,13 +2,15 @@ function validaEmail(form) {
   let email;
   let emailErro;
 
+  console.log(form);
+
   if (form === "login") {
     email = document.getElementById("email_login");
     emailErro = document.getElementById("emailLogin_erro");
   } else if (form === "cadastro") {
     email = document.getElementById("email_cadastro");
     emailErro = document.getElementById("emailCadastro_erro");
-  } else if (form === "" || form === null) {
+  } else if (form === "" || form === undefined) {
     email = document.getElementById("email");
     emailErro = document.getElementById("email_erro");
   }
