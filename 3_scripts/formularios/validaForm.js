@@ -1,16 +1,23 @@
-let erros = true;
 const form = document.getElementById("form");
+const msgEnviada = document.getElementById("msg_enviada");
+
+let erros = true;
 
 form.addEventListener("submit", e => {
   e.preventDefault();
 
   if (erros) {
     validaForm();
-  }
+  } else {
+    setTimeout(() => {
+      msgEnviada.style.display = "flex";
 
-  setTimeout(() => {
-    form.reset();
-  }, 500);
+      setTimeout(() => {
+        msgEnviada.style.display = "none";
+        form.reset();
+      }, 2000);
+    }, 2000);
+  }
 });
 
 form.addEventListener("focusout", () => {

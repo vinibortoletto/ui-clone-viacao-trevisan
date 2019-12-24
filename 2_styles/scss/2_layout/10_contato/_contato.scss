@@ -5,3 +5,43 @@
 
   @extend %form;
 }
+
+.msg_enviada-bg {
+  height: 100vh;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba($c-preto, 0.5);
+
+  display: none;
+}
+
+.msg_enviada {
+  height: 10rem;
+  width: 80vw;
+  max-width: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba($c-branco, 1);
+  color: $c-preto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem $c-cinza;
+
+  h1 {
+    font-size: $f-grande;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: $c-azul;
+  }
+}
