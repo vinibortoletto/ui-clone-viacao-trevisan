@@ -1,4 +1,4 @@
-# (Português) Viação Trevisan
+# Viação Trevisan
 
 ## Ferramentas usadas
 
