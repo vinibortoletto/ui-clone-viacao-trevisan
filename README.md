@@ -1,7 +1,7 @@
 <h4 align="center">
   <img height="80px" alt="vital ajuda's logo" src="https://viacao-trevisan.netlify.app/images/2_module/1_navbar/navbar_logo.png" />
   <br /><br />
-  Logistics and solutions for public and road transportation 
+  UI clone for a logistics and solutions for public and road transportation company.
 </h4>
 
 <hr />
@@ -32,20 +32,20 @@ This project was developed with the following technologies:
 
 ## :information_source: How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16](https://nodejs.org/) or higher + [Npm 6.14.4](https://www.npmjs.com/) or higher installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16](https://nodejs.org/) or higher + [Npm 6.14.4](https://www.npmjs.com/) or higher installed on your computer,[VS Code](https://code.visualstudio.com/) + VSCode extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/vinibortoletto/viacao-trevisan.git
+$ git clone https://github.com/vinibortoletto/ui-clone-viacao-trevisan.git
 
 # Go into the repository
-$ cd vital-ajuda
+$ cd ui-clone-viacao-trevisan
 
 # Install dependencies
 $ npm install
 
 # Start the app
-$ npm start
+$ alt + l, alt + o
 
 ```
 
